@@ -11,7 +11,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #121212;
-            color: #9c27b0; /* Cor roxa para o texto */
+            color: #fff;
             margin: 0;
             padding: 0;
         }
@@ -61,7 +61,6 @@
         .tabcontent h2 {
             font-size: 2rem;
             margin-bottom: 10px;
-            color: #9c27b0; /* Cor roxa no título da aba */
         }
 
         canvas {
@@ -72,14 +71,14 @@
             background-color: #272727;
             padding: 15px;
             text-align: center;
-            color: #9c27b0; /* Cor roxa no rodapé */
+            color: #fff;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
 
         .social-links a {
-            color: #9c27b0; /* Cor roxa nos links sociais */
+            color: #9c27b0; /* Cor roxa */
             text-decoration: none;
             margin: 0 10px;
             font-size: 1.2rem;
@@ -87,11 +86,6 @@
 
         .social-links a:hover {
             text-decoration: underline;
-        }
-
-        /* Garantir que os números dos gráficos também apareçam roxos */
-        .chartjs-render-monitor {
-            color: #9c27b0 !important;
         }
     </style>
 </head>
@@ -202,16 +196,7 @@
                             beginAtZero: true,
                             title: {
                                 display: true,
-                                text: 'Seguidores',
-                                color: '#9c27b0' // Cor roxa no título do eixo Y
-                            },
-                            ticks: {
-                                color: '#9c27b0' // Cor roxa nos números do eixo Y
-                            }
-                        },
-                        x: {
-                            ticks: {
-                                color: '#9c27b0' // Cor roxa nos números do eixo X
+                                text: 'Seguidores'
                             }
                         }
                     }
@@ -242,20 +227,12 @@
                             beginAtZero: true,
                             title: {
                                 display: true,
-                                text: 'Postagens',
-                                color: '#9c27b0' // Cor roxa no título do eixo Y
-                            },
-                            ticks: {
-                                color: '#9c27b0' // Cor roxa nos números do eixo Y
-                            }
-                        },
-                        x: {
-                            ticks: {
-                                color: '#9c27b0' // Cor roxa nos números do eixo X
+                                text: 'Postagens'
                             }
                         }
                     }
-                });
+                }
+            });
         }
 
         // Carregar gráficos ao iniciar a página
