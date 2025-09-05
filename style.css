@@ -19,13 +19,13 @@ header {
     background-color: #272727;
     padding: 30px;
     text-align: center;
-    border-bottom: 3px solid #ff6f00;
+    border-bottom: 3px solid #5b3ddd;
     margin-top: 20px;
 }
 
 header h1 {
     font-size: 3rem;
-    color: #ff6f00;
+    color: #5b3ddd;
     margin: 10px 0;
 }
 
@@ -49,11 +49,11 @@ nav.tabs {
 }
 
 .tablink:hover {
-    background-color: #ff6f00;
+    background-color: #5b3ddd;
 }
 
 .tablink.active {
-    background-color: #ff6f00;
+    background-color: #5b3ddd;
     color: #272727;
 }
 
@@ -72,7 +72,7 @@ nav.tabs {
 
 #inicio h2 {
     font-size: 2.5rem;
-    color: #ff6f00;
+    color: #5b3ddd;
     margin-bottom: 20px;
 }
 
@@ -84,7 +84,7 @@ nav.tabs {
 
 #inicio h3 {
     font-size: 2rem;
-    color: #ff6f00;
+    color:#5b3ddd;
     margin-top: 30px;
 }
 
@@ -120,7 +120,7 @@ canvas {
 
 #contato h2 {
     font-size: 2.5rem;
-    color: #ff6f00;
+    color: #5b3ddd;
     margin-bottom: 20px;
 }
 
@@ -134,7 +134,7 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 1rem;
-    color: #ff6f00;
+    color: #5b3ddd;
     position: fixed;
     bottom: 0;
     width: 100%;

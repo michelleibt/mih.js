@@ -24,12 +24,12 @@
 
         h1 {
             font-size: 2.5rem;
-            color: #ff6f00;
+            color: #9c27b0; /* Cor roxa */
             margin: 0;
         }
 
         .logo img {
-            width: 50px;
+            width: 500px;
             height: auto;
         }
 
@@ -39,7 +39,7 @@
 
         .tablink {
             padding: 10px 20px;
-            background-color: #ff6f00;
+            background-color: #9c27b0; /* Cor roxa */
             border: none;
             color: white;
             cursor: pointer;
@@ -47,7 +47,7 @@
         }
 
         .tablink.active {
-            background-color: #e65100;
+            background-color: #7b1fa2; /* Tom mais escuro de roxo */
         }
 
         .content {
@@ -76,13 +76,24 @@
             bottom: 0;
             width: 100%;
         }
+
+        .social-links a {
+            color: #9c27b0; /* Cor roxa */
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <img src="assets/mih_logo.png" alt="Logo Mih Estelar">
+            <img src="channels4_banner.jpg" alt="Logo Mih Estelar">
         </div>
         <h1>Mih Estelar - Canal Oficial</h1>
 
@@ -113,12 +124,30 @@
 
         <div id="sobre" class="tabcontent">
             <h2>Sobre o Canal</h2>
-            <p><strong>Primeiro Vídeo Lançado:</strong> 13 de fevereiro de 2025 - <strong>Como conheci o Roblox?</strong></p>
+            <p><strong>Bem-vindo ao canal de Mih Estelar!</strong> 🚀</p>
+            <p>Oi, sou <strong>Michelle</strong>, a criadora deste canal! Meu aniversário é no <strong>17 de julho de 2007</strong>, e sou autista com TDAH. Aqui, compartilho minhas aventuras no mundo dos <strong>games</strong>, especialmente em <strong>dar dicas</strong>, expressar minhas <strong>opiniões</strong> ou até mesmo ter <strong>minhas primeiras experiências jogando</strong>. Além disso, amo explorar outros mundos de <strong>diversão</strong>, <strong>criatividade</strong> e <strong>desafios</strong>!</p>
+            <p>No canal, você vai encontrar <strong>gameplays</strong>, <strong>dicas</strong>, <strong>desafios</strong>, <strong>opiniões</strong> e muito mais. A missão é criar um espaço onde todos possam se divertir e aprender juntos!</p>
+
+            <p>O canal tem como foco proporcionar uma <strong>experiência autêntica e divertida</strong>, especialmente para aqueles que adoram se aventurar em jogos emocionantes. Minha ideia é formar uma <strong>comunidade unida</strong>, onde possamos compartilhar momentos incríveis e crescer juntos.</p>
+
+            <h3>Primeiro Vídeo Lançado:</h3>
+            <p><strong>📅 13 de fevereiro de 2025</strong></p>
+            <p><strong>Título:</strong> *Como conheci o Roblox?*</p>
+            <p>Esse foi o vídeo que deu o <strong>pontapé inicial</strong> nesta jornada! Nele, compartilho como entrei para o mundo do <strong>Roblox</strong> e como ele se tornou uma parte importante da minha vida. Desde então, o canal tem sido uma verdadeira <strong>aventura</strong>, com novos vídeos a cada <strong>quinta-feira</strong>!</p>
+
+            <p><strong>🔔 Novos vídeos toda semana!</strong><br>Se inscreva para não perder nada e venha fazer parte da nossa comunidade de <strong>exploradores</strong> e <strong>gamers apaixonados</strong>! Vamos crescer juntos e aproveitar cada momento dessa jornada no universo dos games! 🎮</p>
         </div>
 
         <div id="contato" class="tabcontent">
             <h2>Contato</h2>
-            <p>Se deseja entrar em contato, envie uma mensagem para mih.estelar@canal.com</p>
+            <p>Se você tem alguma dúvida, sugestão ou apenas quer trocar uma ideia, fique à vontade para me enviar uma mensagem! Você também pode me encontrar nas minhas redes sociais:</p>
+
+            <div class="social-links">
+                <a href="https://www.youtube.com/channel/UCc2pLg45xeeqgLVufVx-WOw" target="_blank">YouTube</a>
+                <a href="https://www.tiktok.com/@x_.mich._x?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
+                <a href="https://discord.gg/J74uRsf9" target="_blank">Discord</a>
+                <a href="https://twitch.tv/mih_estelar" target="_blank">Twitch</a>
+            </div>
         </div>
     </main>
 
@@ -155,14 +184,9 @@
                     datasets: [{
                         label: 'Seguidores',
                         data: [120, 133, 145, 160, 180, 200, 220], // Atualização para 133 seguidores em Fevereiro
-                        borderColor: 'rgba(255, 111, 0, 1)', // Cor do gráfico
-                        backgroundColor: 'rgba(255, 111, 0, 0.3)', // Cor de fundo
-                        pointBackgroundColor: '#ff6f00', // Cor dos pontos
-                        pointBorderColor: '#ff6f00',
-                        pointBorderWidth: 3,
-                        pointRadius: 6,
-                        fill: true,
-                        tension: 0.4 // Animação mais suave
+                        borderColor: '#9c27b0', // Cor roxa
+                        backgroundColor: 'rgba(156, 39, 176, 0.3)', // Cor de fundo roxa translúcida
+                        borderWidth: 2
                     }]
                 },
                 options: {
@@ -172,22 +196,7 @@
                             beginAtZero: true,
                             title: {
                                 display: true,
-                                text: 'Número de Seguidores'
-                            }
-                        },
-                        x: {
-                            title: {
-                                display: true,
-                                text: 'Meses'
-                            }
-                        }
-                    },
-                    plugins: {
-                        tooltip: {
-                            callbacks: {
-                                label: function(tooltipItem) {
-                                    return 'Seguidores: ' + tooltipItem.raw;
-                                }
+                                text: 'Seguidores'
                             }
                         }
                     }
@@ -195,20 +204,20 @@
             });
         }
 
-        // Gerar o gráfico de postagens de vídeos nas quintas-feiras
+        // Gerar o gráfico de Postagens de Vídeos
         function generatePostagemChart() {
             const ctx = document.getElementById('postagemChart').getContext('2d');
-            
+
             new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ['1ª Quinta', '2ª Quinta', '3ª Quinta', '4ª Quinta', '5ª Quinta'], // Quinta-feira do mês
+                    labels: ['1ª Quinta', '2ª Quinta', '3ª Quinta', '4ª Quinta'],
                     datasets: [{
                         label: 'Postagens de Vídeos',
-                        data: [1, 1, 1, 1, 0], // Cada barra representa uma postagem feita na quinta-feira
-                        backgroundColor: 'rgba(255, 87, 34, 0.8)', // Cor das barras
-                        borderColor: 'rgba(255, 87, 34, 1)',
-                        borderWidth: 1
+                        data: [1, 1, 1, 1], // Postagem toda quinta-feira
+                        backgroundColor: '#9c27b0', // Cor roxa
+                        borderColor: '#9c27b0',
+                        borderWidth: 2
                     }]
                 },
                 options: {
@@ -220,33 +229,17 @@
                                 display: true,
                                 text: 'Postagens'
                             }
-                        },
-                        x: {
-                            title: {
-                                display: true,
-                                text: 'Quintas-feiras do Mês'
-                            }
-                        }
-                    },
-                    plugins: {
-                        tooltip: {
-                            callbacks: {
-                                label: function(tooltipItem) {
-                                    return 'Postagens: ' + tooltipItem.raw;
-                                }
-                            }
                         }
                     }
                 }
             });
         }
 
-        // Gerar os gráficos ao carregar a página
-        generateSeguidoresChart();
-        generatePostagemChart();
-
-        // Inicializa com a aba "Início" visível
-        document.getElementsByClassName("tablink")[0].click();
+        // Carregar gráficos ao iniciar a página
+        window.onload = function() {
+            generateSeguidoresChart();
+            generatePostagemChart();
+        };
     </script>
 </body>
 </html>
